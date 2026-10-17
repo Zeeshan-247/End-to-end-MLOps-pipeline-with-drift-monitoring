@@ -55,3 +55,5 @@ def test_constant_reference_column_does_not_crash():
     cur = pd.DataFrame({"x": np.random.default_rng(0).normal(size=500)})
     report = detect_drift(ref, cur, numeric=["x"], categorical=[])
     assert np.isfinite(report.features[0].psi)
+
+# test
